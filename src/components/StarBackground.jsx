@@ -19,13 +19,13 @@ export const StarBackground = () => {
         window.addEventListener('resize', handleResize)
 
         return () => window.removeEventListener("resize", handleResize)
-        
+
     }, []);
 
     const generateStars = () => {
         const numberOfStars = Math.floor
             (window.innerWidth * window.innerHeight/ 100000 //Adjusts star density
-                
+
         );
         const newStars = [];
         for (let i = 0; i < numberOfStars; i++) {
@@ -34,10 +34,20 @@ export const StarBackground = () => {
                 size: Math.random() * 3 + 1, // Size between 1 and 4
                 x: Math.random() * 100, // Position anywhere on x axis of screen width
                 y: Math.random() * 100, // Position anywhere on y axis of screen height
-                opacity: Math.random() * 0.5 + 0.5, // Opacity between 0.5 and 1
+                opacity: Math.random() * 0.5 + 0.3, // Opacity between 0.5 and 1
                 animationDuration: Math.random() * 4 +  2, // Duration between 2s and 6s
             });
-        } 
+        }
+
+        // Add one special star that's bigger and brighter
+        newStars.push({
+            id: 'special-star',
+            size: 8, // 3x the maximum regular star size (4 * 3)
+            x: 65, // Slightly to the right of center (50% would be center)
+            y: 35, // Above the h1 text (h1 is around 40-45% from top)
+            opacity: 1, // Maximum brightness
+            animationDuration: 1, // Faster, more noticeable pulsing
+        });
 
         setStars(newStars);
     };
