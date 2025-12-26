@@ -128,6 +128,12 @@
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
+@utility text-glow-strong {
+  @apply relative;
+  text-shadow: 0 0 20px rgba(167, 139, 250, 0.8),
+               0 0 40px rgba(167, 139, 250, 0.4);
+}
+
 @utility card-hover {
   @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
 }
@@ -148,6 +154,14 @@
 @utility star {
   @apply absolute rounded-full bg-white ; 
   box-shadow: 0 0 10px 2px rgba(255,255,255, 0.4);
+}
+
+@utility specialstar{
+  @apply absolute rounded-full bg-white ;
+  box-shadow:
+    0 0 40px 8px rgba(255, 255, 255, 0.8),
+    0 0 80px 12px rgba(255, 255, 255, 0.6),
+    0 0 120px 16px rgba(255, 255, 255, 0.4);
 }
 /* TODO: add red meteor for light mode  */
 @utility meteor {

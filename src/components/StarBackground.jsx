@@ -44,9 +44,10 @@ export const StarBackground = () => {
             id: 'special-star',
             size: 8, // 3x the maximum regular star size (4 * 3)
             x: 65, // Slightly to the right of center (50% would be center)
-            y: 35, // Above the h1 text (h1 is around 40-45% from top)
+            y: 65, // Above the h1 text (h1 is around 40-45% from top)
             opacity: 1, // Maximum brightness
-            animationDuration: 1, // Faster, more noticeable pulsing
+            animationDuration: Math.random() * 4 +  2,
+            isSpecial: true, // Mark this star as special
         });
 
         setStars(newStars);
@@ -71,7 +72,7 @@ export const StarBackground = () => {
     
     return <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
         {stars.map((star) => (
-            <div key={star.id} className="star animate-pulse-subtle" style={{
+            <div key={star.id} className={`${star.isSpecial ? 'specialstar' : 'star'} animate-pulse-subtle`} style={{
                 width: star.size + "px",
                 height: star.size + "px",
                 left: star.x + "%",
