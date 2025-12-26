@@ -16,7 +16,7 @@ export const NavBar = () => {
 
         useEffect(() => {
             const handleScroll = () => {
-                setIsScrolled(window.screenY > 10)
+                setIsScrolled(window.scrollY > 10)
             }
 
             window.addEventListener("scroll", handleScroll)
@@ -46,7 +46,7 @@ export const NavBar = () => {
                         <a
                             key={key}
                             href = {item.href}
-                            className = "text-foreground/80 hover:text-primary transtion-colors duration-300"
+                            className = "text-foreground/80 hover:text-primary transition-colors duration-300"
                         >
                             {item.name}
                         </a>
@@ -75,7 +75,7 @@ export const NavBar = () => {
                             <a
                                 key={key}
                                 href = {item.href}
-                                className = "text-foreground/80 hover:text-primary transtion-colors duration-300"
+                                className = "text-foreground/80 hover:text-primary transition-colors duration-300"
                                 onClick = {() => setIsMenuOpen(false)}
                             >
                                 {item.name}
