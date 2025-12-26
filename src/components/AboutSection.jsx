@@ -1,3 +1,6 @@
+import { Lightbulb, Pen, ChartSpline } from "lucide-react";
+import { cn } from "@/lib/utils";
+
 export const AboutSection = () => {
     return <section id="about" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
@@ -27,12 +30,55 @@ export const AboutSection = () => {
                             Stuur me een mail
                         </a>
                         {/* TODO: CV updaten en toevoegen */}
-                        <a href="" className="cosmic-button">
+                        <a href="" className={cn("px-6 py-2 rounded-full border border-primary text-primary",
+                                                 "hover:bg-primary/10 transition-colors duration-300"
+                                                 )}>
                             Download mijn CV
                         </a>
                     </div>
                 </div>
+                <div className="grid grid-cols-1 gap-6">
+                    <div className="gradient-border p-6 card-hover">
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <Lightbulb className="h-6 w-6 text-primary"/>
+                            </div>
+                            <div className="text-left">
+                                <h4 className="font-semibold text-lg">Campagne Planning</h4>
+                                <p className="text-muted-foreground">
+                                    Hier wat tekst over hoe ik dit ga doen
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="gradient-border p-6 card-hover">
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <Pen className="h-6 w-6 text-primary"/>
+                            </div>
+                            <div className="text-left">
+                                <h4 className="font-semibold text-lg">Contentcreatie</h4>
+                                <p className="text-muted-foreground">
+                                    Ik ben een vet goede copywriter jeweet
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="gradient-border p-6 card-hover">
+                        <div className="flex items-start gap-4">
+                            <div className="p-3 rounded-full bg-primary/10">
+                                <ChartSpline className="h-6 w-6 text-primary"/>
+                            </div >
+                            <div className="text-left">
+                                <h4 className="font-semibold text-lg">Data Analayse</h4>
+                                <p className="text-muted-foreground">
+                                    Google Analytics 4
+                                </p>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
             </div>
 
         </div>
