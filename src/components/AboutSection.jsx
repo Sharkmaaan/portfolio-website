@@ -2,7 +2,7 @@ import { Lightbulb, Pen, ChartSpline } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const AboutSection = () => {
-    return <section id="about" className="py-24 px-4 relative">
+    return <section id="overmij" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className ="text-3xl md:text-4xl font-bold mb-12 text-center" >
                 Maar wie is <span className="text-primary"> Sanjay</span>, eigenlijk?
@@ -44,9 +44,9 @@ export const AboutSection = () => {
                                 <Lightbulb className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Campagne Planning</h4>
+                                <h4 className="font-semibold text-lg">Planning</h4>
                                 <p className="text-muted-foreground">
-                                    Hier wat tekst over hoe ik dit ga doen
+                                    Altijd plannetjes smeden #snitchesgetstitches
                                 </p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@ export const AboutSection = () => {
                                 <Pen className="h-6 w-6 text-primary"/>
                             </div>
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Contentcreatie</h4>
+                                <h4 className="font-semibold text-lg">Uitvoering</h4>
                                 <p className="text-muted-foreground">
                                     Ik ben een vet goede copywriter jeweet
                                 </p>
@@ -70,9 +70,9 @@ export const AboutSection = () => {
                                 <ChartSpline className="h-6 w-6 text-primary"/>
                             </div >
                             <div className="text-left">
-                                <h4 className="font-semibold text-lg">Data Analayse</h4>
+                                <h4 className="font-semibold text-lg">Analyse</h4>
                                 <p className="text-muted-foreground">
-                                    Google Analytics 4
+                                    Ik kan die shizzle analysen als de matrix
                                 </p>
                             </div>
                         </div>

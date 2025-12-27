@@ -10,11 +10,11 @@ export const HeroSection = () => {
                     <span className="text-primary opacity-0 animate-fade-in-delay-1">Sanjay </span>
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Ghosh </span>
                 </h1>
-                <p className= "text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    <span>Online marketingspecialist. Ik plan campagnes, creeër materiaal en analyseer data. Zodat jouw organisatie </span> 
+                <p className= "text-lg md:text-xl max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+                    <span className="text-muted-foreground">Online marketingspecialist. Ik plan campagnes, creeër materiaal en analyseer data. Zodat jouw organisatie </span> 
                     <span className="text-glow-strong"> straalt </span> 
-                    <span>waar anderen </span> 
-                    <span className="animate-pulse-subtle">twinkelen.</span>
+                    <span className="text-muted-foreground">waar anderen </span> 
+                    <span className="text-muted-foreground animate-pulse-subtle">twinkelen.</span>
                 </p>
                 <div className="pt-4 opacity-0 animate-fade-in-delay-4">
                     <a href="#projecten" className="cosmic-button" >
