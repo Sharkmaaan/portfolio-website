@@ -38,11 +38,12 @@ export const SkillsSection = () => {
         const filteredSkills = skills.filter((skill) => activeCategory ==="Alle" || skill.category === activeCategory
     );
     return (
-        <section id="vaardigheden" className="py-24 px-4 realtive bg-secondary/3">
+        <section id="vaardigheden" className="py-24 px-4 relative bg-secondary/3">
             <div className="container mx-auto max-w-5xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-                Mijn <span className="text-primary">Vaardigheden</span>
+            <h2 className="text-3xl md:text-4xl mb-4 font-bold text-center">
+                Dus wat <span className="text-primary">kan</span> ie dan?
             </h2>
+            <p className= "text-lg md:text-xl text-max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3">Nou, best wel veel eigenlijk.</p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {categories.map((category, key) => (
