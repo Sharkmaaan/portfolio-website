@@ -11,7 +11,7 @@ export const HeroSection = () => {
                     <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">Ghosh </span>
                 </h1>
                 <p className= "text-lg md:text-xl max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-                    <span className="text-muted-foreground">Online marketingspecialist. Ik plan campagnes, creeër materiaal en analyseer data. Zodat jouw organisatie </span> 
+                    <span className="text-muted-foreground">Online marketingspecialist. Ik plan, maak en analyseer content. Zodat jouw organisatie </span> 
                     <span className="text-glow-strong"> straalt </span> 
                     <span className="text-muted-foreground">waar anderen </span> 
                     <span className="text-muted-foreground animate-pulse-subtle">twinkelen.</span>

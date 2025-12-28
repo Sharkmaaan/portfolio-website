@@ -23,15 +23,30 @@ const skills = [
 
     // Analyse
     {name: "SEO/SEA-analyse", level: 85, category: "Analyse"},
-    {name: "Google Analytics 4 (GA4)", level: 85, category: "Analyse"},
-    {name: "Google Search Console (GSC)", level: 85, category: "Analyse"},
     {name: "A/B testing", level: 80, category: "Analyse"},
-    {name: "Google Data Studio/Looker", level: 65, category: "Analyse"},
     {name: "CRM analytics", level: 80, category: "Analyse"},
-    {name: "Google Tag Manager (GTM)", level: 75, category: "Analyse"},
+    {name: "Data visualisatie", level: 75, category: "Analyse"},
+    {name: "Conversie-optimalisatie", level: 85, category: "Analyse"},
+
+    //Tools
+    {name: "Google Analytics 4 (GA4)", level: 85, category: "Tools"},
+    {name: "Google Search Console (GSC)", level: 85, category: "Tools"},
+    {name: "Google Data Studio/Looker", level: 65, category: "Tools"},
+    {name: "Google Tag Manager (GTM)", level: 75, category: "Tools"},
+    {name: "ContentSquare(vroeger Hotjar)", level: 70, category: "Tools"},
+    {name: "Semrush", level: 75, category: "Tools"},
+    {name: "Hubspot", level: 75, category: "Tools"},
+    {name: "Wordpress", level: 75, category: "Tools"},
+    {name: "Shopify", level: 75, category: "Tools"},
+    {name: "Mailchimp", level: 75, category: "Tools"},
+    {name: "ClickUp", level: 75, category: "Tools"},
+    {name: "LinkedIn Campaign Manager", level: 80, category: "Tools"},
+    {name: "Google Ads", level: 75, category: "Tools"},
+    {name: "Facebook Business Manager", level: 75, category: "Tools"},
+
 ]
 
-const categories =["Alle", "Planning", "Uitvoering", "Analyse"]
+const categories = ["Alle", "Planning", "Uitvoering", "Analyse", "Tools"]
 export const SkillsSection = () => {
         const [activeCategory, setActiveCategory] = useState("Alle")
 
@@ -43,7 +58,7 @@ export const SkillsSection = () => {
             <h2 className="text-3xl md:text-4xl mb-4 font-bold text-center">
                 Dus wat <span className="text-primary">kan</span> ie dan?
             </h2>
-            <p className= "text-lg md:text-xl text-max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3">Nou, best wel veel eigenlijk.</p>
+            <p className="text-lg md:text-xl max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3">Nou, best wel veel eigenlijk.</p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {categories.map((category, key) => (
@@ -52,9 +67,9 @@ export const SkillsSection = () => {
                     onClick={() => setActiveCategory(category)}
                     className={cn(
                     "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                    activeCategory === category ? 
-                    "bg-primary text-primary-foreground" : 
-                    "bg-secondary/70 text-foreground hover: bg-secondary"
+                    activeCategory === category ?
+                    "bg-primary text-primary-foreground" :
+                    "bg-secondary/70 text-foreground hover:bg-secondary"
                 )}
                 >
                     {category}
@@ -71,9 +86,10 @@ export const SkillsSection = () => {
                         <div className="text-left mb-4">
                             <h3 className="font-semibold text-lg"> {skill.name} </h3>
                         </div>
-                        {/* Progress bar */}
+                        {/* Progress bar (commented out because I think it's a bit cringe here, but I might use it somewhere else because the animation is cool) */}
+                        {/*
                         <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                            <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out" 
+                            <div className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                             style={{width: skill.level + "%"}}
                             />
                         </div>
@@ -81,6 +97,7 @@ export const SkillsSection = () => {
                             <span className="text-sm text-muted-foreground">
                                 {skill.level}%</span>
                         </div>
+                        */}
                     </div>
                 ))}
             </div>
