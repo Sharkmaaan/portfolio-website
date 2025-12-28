@@ -38,7 +38,7 @@ export const StarBackground = () => {
                 animationDuration: Math.random() * 4 +  2, // Duration between 2s and 6s
             });
         }
-
+        
         // Add one special star that's bigger and brighter
         newStars.push({
             id: 'special-star',

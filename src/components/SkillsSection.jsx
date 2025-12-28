@@ -33,7 +33,6 @@ const skills = [
     {name: "Google Search Console (GSC)", level: 85, category: "Tools"},
     {name: "Google Data Studio/Looker", level: 65, category: "Tools"},
     {name: "Google Tag Manager (GTM)", level: 75, category: "Tools"},
-    {name: "ContentSquare(vroeger Hotjar)", level: 70, category: "Tools"},
     {name: "Semrush", level: 75, category: "Tools"},
     {name: "Hubspot", level: 75, category: "Tools"},
     {name: "Wordpress", level: 75, category: "Tools"},
@@ -58,7 +57,8 @@ export const SkillsSection = () => {
             <h2 className="text-3xl md:text-4xl mb-4 font-bold text-center">
                 Dus wat <span className="text-primary">kan</span> ie dan?
             </h2>
-            <p className="text-lg md:text-xl max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3">Nou, best wel veel eigenlijk.</p>
+            <p className="text-lg md:text-xl max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3"
+            >Nou, best wel veel eigenlijk.</p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {categories.map((category, key) => (
@@ -83,7 +83,7 @@ export const SkillsSection = () => {
                     <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover"
                     >
                         {/* Skill name tag */}
-                        <div className="text-left mb-4">
+                        <div className="text-center mb-4">
                             <h3 className="font-semibold text-lg"> {skill.name} </h3>
                         </div>
                         {/* Progress bar (commented out because I think it's a bit cringe here, but I might use it somewhere else because the animation is cool) */}
