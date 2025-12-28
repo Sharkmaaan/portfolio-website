@@ -10,11 +10,11 @@ export const ContactSection = () => {
                     Neem <span className="text-primary">contact </span> op
                 </h2>
                 <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Dus wat zeg je ervan? Als je dit leest heb ik je aandacht toch een flinke tijd vastgehouden. Zullen we kijken of we dat ook voor je doelgroep kunnen doen?
+                    Dus wat zeg je ervan? Als je dit leest heb ik je aandacht toch een flinke tijd vastgehouden. Zullen we kijken of ik dat ook voor je doelgroep kan doen?
                 </p>
                 <div className="flex flex-col items-center">
-                    <div className="space-y-8 w-full max-w-4xl">
-                        <h3 className="text-2xl font-semibold text-center">Contactgegevens</h3>
+                    <div className="space-y-8 w-full max-w-4xl mb-30">
+                        {/*<h3 className="text-2xl font-semibold text-center">Contactgegevens</h3>*/}
 
                         <div className="flex flex-wrap justify-center gap-6">
                             <div className="flex flex-col items-center text-center space-y-3">
