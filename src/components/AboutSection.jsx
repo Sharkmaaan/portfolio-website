@@ -70,9 +70,9 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Uitvoering</h4>
                                 <p className="text-muted-foreground">
-                                    Dr. Faberyayo zei ook: "Een goed begin is maar de helft". 
-                                    Dus ook in de uitvoering kan je veel goed of fout doen. 
-                                    Mijn ervaring met het uitvoeren van marketingdiensten zorgt
+                                    Faberyayo zei ook: "Een goed begin is maar de helft". 
+                                    Ook in de uitvoering kan je veel goed of fout doen. 
+                                    Mijn ervaring met het uitvoeren van marketingdiensten zorgt ervoor
                                     dat je ook een goede tweede helft speelt.
                                 </p>
                             </div>
@@ -88,7 +88,8 @@ export const AboutSection = () => {
                                 <p className="text-muted-foreground">
                                     Helaas vergat Faberyayo in zijn haast de derde helft.
                                     Maar ik niet. Door goed te analyseren wat werkt en wat niet, 
-                                    leer je steeds beter hoe je aansluit op je doelgroep. En dan ben je alsnog in de lucht als sterrenstof.
+                                    leer je steeds beter hoe je aansluit op je doelgroep. 
+                                    En dan ben je alsnog in de lucht als sterrenstof.
                                 </p>
                             </div>
                         </div>
