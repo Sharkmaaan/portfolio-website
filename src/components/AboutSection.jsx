@@ -44,6 +44,18 @@ export const AboutSection = () => {
                         </a>
                     </div>
                 </div>
+                <div className="relative w-full h-full">
+                    <div className="gradient-border p-4 card-hover rounded-2xl overflow-hidden">
+                        <img
+                            src="/Happycopywriter.jpg"
+                            style={{ transform: 'scaleX(-1)' }}
+                            alt="Een foto van Sanjay die lacht en achter een laptop zit"
+                            className="w-full h-full object-cover rounded-lg"
+                        />
+                    </div>
+                </div>
+
+                {/* OLD CONTENT - COMMENTED OUT
                 <div className="grid grid-cols-1 gap-6">
                     <div className="gradient-border p-6 card-hover">
                         <div className="flex items-start gap-4">
@@ -53,10 +65,10 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Planning</h4>
                                 <p className="text-muted-foreground">
-                                    Zoals Faberyayo al zei: 
-                                    "Een goed begin is het halve werk". 
-                                    Door informatie op te halen uit de organisatie en 
-                                    die in te plannen in een marketingkalender, 
+                                    Zoals Faberyayo al zei:
+                                    "Een goed begin is het halve werk".
+                                    Door informatie op te halen uit de organisatie en
+                                    die in te plannen in een marketingkalender,
                                     zorg ik ervoor dat het ook echt een goed begin is.
                                 </p>
                             </div>
@@ -70,8 +82,8 @@ export const AboutSection = () => {
                             <div className="text-left">
                                 <h4 className="font-semibold text-lg">Uitvoering</h4>
                                 <p className="text-muted-foreground">
-                                    Faberyayo zei ook: "Een goed begin is maar de helft". 
-                                    Ook in de uitvoering kan je veel goed of fout doen. 
+                                    Faberyayo zei ook: "Een goed begin is maar de helft".
+                                    Ook in de uitvoering kan je veel goed of fout doen.
                                     Mijn ervaring met het uitvoeren van marketingdiensten zorgt ervoor
                                     dat je ook een goede tweede helft speelt.
                                 </p>
@@ -87,8 +99,8 @@ export const AboutSection = () => {
                                 <h4 className="font-semibold text-lg">Analyse</h4>
                                 <p className="text-muted-foreground">
                                     Helaas vergat Faberyayo in zijn haast de derde helft.
-                                    Maar ik niet. Door goed te analyseren wat werkt en wat niet, 
-                                    leer je steeds beter hoe je aansluit op je doelgroep. 
+                                    Maar ik niet. Door goed te analyseren wat werkt en wat niet,
+                                    leer je steeds beter hoe je aansluit op je doelgroep.
                                     En dan ben je alsnog in de lucht als sterrenstof.
                                 </p>
                             </div>
@@ -96,6 +108,7 @@ export const AboutSection = () => {
 
                     </div>
                 </div>
+                */}
             </div>
 
         </div>
