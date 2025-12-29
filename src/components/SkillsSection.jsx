@@ -33,6 +33,7 @@ const skills = [
     {name: "Google Search Console (GSC)", level: 85, category: "Tools"},
     {name: "Google Data Studio/Looker", level: 65, category: "Tools"},
     {name: "Google Tag Manager (GTM)", level: 75, category: "Tools"},
+    {name: "Google Ads", level: 75, category: "Tools"},
     {name: "Semrush", level: 75, category: "Tools"},
     {name: "Hubspot", level: 75, category: "Tools"},
     {name: "Wordpress", level: 75, category: "Tools"},

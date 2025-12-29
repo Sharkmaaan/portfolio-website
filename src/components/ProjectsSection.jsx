@@ -44,11 +44,13 @@ export const ProjectsSection = () => {
     return <section id="projecten" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-                Wat heb ik allemaal al <span className="text-primary"> uitgevoerd?</span>
+                Wow, bij <span className="text-primary"> wie </span> heeft ie dat allemaal gedaan dan?
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto"
-            >Ik heb met meer dan 40 bedrijven samengewerkt, dus dat is wat veel voor hier. Hier dus vooral de highlights. Vraag het gerust als je wilt weten of ik met iets specifieks ervaring heb.
+            >Ik heb met meer dan 40 bedrijven samengewerkt, dus dat is wat veel om hier allemaal neer te knallen. 
+            Voor nu dus even de highlights. 
+            Vraag het gerust als je wilt weten of ik met iets specifieks ervaring heb.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

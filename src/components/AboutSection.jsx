@@ -13,7 +13,7 @@ export const AboutSection = () => {
                     <h3 className="text-xl font-semibold">Online marketeer, copywriter en kattenliefhebber.</h3>
                     <p className="text-justify text-muted-foreground">
                     Ik ben een online marketeer. Waarom is dat belangrijk voor jou? Nou, zie het zo. 
-                    Mensen lezen graag boeken, maar ze blokkeren reclames. 
+                    Mensen lezen graag verhalen, maar ze blokkeren reclames. 
                     Dus als je wilt dat mensen het belangrijk vinden wat je doet, moet je ze je verhaal vertellen. 
                     En dat kan ik als geen ander.
                     </p>
@@ -27,9 +27,8 @@ export const AboutSection = () => {
 
                     <p className="text-justify text-muted-foreground">
                     Maar de beste campagne ter wereld is nog niks waard als je niet weet hoe deze presteert. 
-                    Een goede campagne is pas goed als je inzicht hebt in de data. 
                     Daarom analyseer ik elke campagne tot in detail. 
-                    Zo zorg ik dat elke euro die je uitgeeft ook echt resultaat oplevert.
+                    Zo zorg ik dat elke euro die we uitgeven ook echt resultaat oplevert.
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
