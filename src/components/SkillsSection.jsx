@@ -41,7 +41,6 @@ const skills = [
     {name: "Mailchimp", level: 75, category: "Tools"},
     {name: "ClickUp", level: 75, category: "Tools"},
     {name: "LinkedIn Campaign Manager", level: 80, category: "Tools"},
-    {name: "Google Ads", level: 75, category: "Tools"},
     {name: "Facebook Business Manager", level: 75, category: "Tools"},
 
 ]
