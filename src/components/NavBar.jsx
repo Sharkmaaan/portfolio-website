@@ -17,7 +17,7 @@ export const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.screenY > 10)
+            setIsScrolled(window.scrollY > 10)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -28,7 +28,7 @@ export const NavBar = () => {
         <nav
         className={cn(
             "fixed w-full z-40 transition-all duration-300",
-            isScrolled ? "py-3 bg-background/80 shadow-xs" : "py-5"
+            isScrolled ? "py-3 bg-background/95 shadow-xs" : "py-5"
 
         )}
         >
@@ -42,7 +42,7 @@ export const NavBar = () => {
                 </a>
 
                 {/* desktop nav */}
-                <div className = "hidden md:flex space-x-8">
+                <div className = "hidden md:flex items-center space-x-8">
                     {navItems.map((item, key) => (
                         <a
                             key={key}
@@ -52,7 +52,7 @@ export const NavBar = () => {
                             {item.name}
                         </a>
                     ))}
-                    <ThemeToggle />
+                    <ThemeToggle className="-m-2" />
                 </div>
 
                 {/* mobile nav */}
@@ -66,7 +66,7 @@ export const NavBar = () => {
                 
                 <div className={cn(
                         "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
-                        "transition-all duration-300 md:hidden",
+                        "transition-all duration-300 md:hidden transform-gpu will-change-transform",
                         isMenuOpen
                             ? "opacity-100 pointer-events-auto"
                             : "opacity-0 pointer-events-none"
@@ -85,6 +85,7 @@ export const NavBar = () => {
                         ))}
                         <ThemeToggle className="self-center" iconSize="h-6 w-6" />
                     </div>
+
                 </div>
 
             </div>
