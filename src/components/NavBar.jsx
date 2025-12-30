@@ -12,23 +12,23 @@ const navItems = [
 ]
 
 export const NavBar = () => {
-        const [isScrolled, setIsScrolled] = useState(false)
-        const [isMenuOpen, setIsMenuOpen] = useState(false)
+        const[isScrolled, setIsScrolled] = useState(false)
+        const[isMenuOpen, setIsMenuOpen] = useState(false)
 
-        useEffect(() => {
-            const handleScroll = () => {
-                setIsScrolled(window.scrollY > 10)
-            }
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.screenY > 10)
+        }
 
-            window.addEventListener("scroll", handleScroll)
-            return () => window.removeEventListener("scroll", handleScroll)
+        window.addEventListener("scroll", handleScroll)
+        return () => window.removeEventListener("scroll", handleScroll)
 
-        }, [])
+    }, [])
     return (
         <nav
         className={cn(
             "fixed w-full z-40 transition-all duration-300",
-            isScrolled ? "md:py-3 bg-background/80 backdrop-blur-md md:shadow-xs py-5" : "py-5"
+            isScrolled ? "py-3 bg-background/80 shadow-xs" : "py-5"
 
         )}
         >
@@ -36,20 +36,18 @@ export const NavBar = () => {
                 <a className="text-xl font-bold text-primary flex items-center"
                 href="#hero"
                 >
-                    <span className = {cn(
-                        "relative z-10"
-        )}>
+                    <span className = "relative z-10">
                         <span className="text-glow text-foreground"> Sanjay Ghosh </span> Portfolio
                     </span>
                 </a>
 
                 {/* desktop nav */}
-                <div className = "hidden md:flex items-center space-x-8">
+                <div className = "hidden md:flex space-x-8">
                     {navItems.map((item, key) => (
                         <a
                             key={key}
                             href = {item.href}
-                            className = "text-foreground/80 hover:text-primary transition-colors duration-300"
+                            className = "text-foreground/80 hover:text-primary transtion-colors duration-300"
                         >
                             {item.name}
                         </a>
@@ -79,7 +77,7 @@ export const NavBar = () => {
                             <a
                                 key={key}
                                 href = {item.href}
-                                className = "text-foreground/80 hover:text-primary transition-colors duration-300"
+                                className = "text-foreground/80 hover:text-primary transtion-colors duration-300"
                                 onClick = {() => setIsMenuOpen(false)}
                             >
                                 {item.name}
