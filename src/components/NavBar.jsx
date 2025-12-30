@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
-import { Menu, X, Sun, Moon } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
     {name: "Home", href: "#hero"},
@@ -13,7 +14,6 @@ const navItems = [
 export const NavBar = () => {
         const [isScrolled, setIsScrolled] = useState(false)
         const [isMenuOpen, setIsMenuOpen] = useState(false)
-        const [isDarkmode, setIsDarkmode] = useState(true)
 
         useEffect(() => {
             const handleScroll = () => {
@@ -24,40 +24,11 @@ export const NavBar = () => {
             return () => window.removeEventListener("scroll", handleScroll)
 
         }, [])
-
-        /* Check for stored theme preference, default to dark */
-        useEffect(() => {
-            const storedTheme = localStorage.getItem("theme");
-            if (storedTheme === "light") {
-                setIsDarkmode(false);
-                document.documentElement.classList.remove("dark");
-            } else {
-                // Default to dark mode
-                setIsDarkmode(true);
-                document.documentElement.classList.add("dark");
-                if (!storedTheme) {
-                    localStorage.setItem("theme", "dark");
-                }
-            }
-        }, []);
-
-        /* Toggle between light and dark themes */
-        const toggleTheme = () => {
-            if (isDarkmode) {
-                document.documentElement.classList.remove("dark");
-                localStorage.setItem("theme", "light");
-                setIsDarkmode(false);
-            } else {
-                document.documentElement.classList.add("dark");
-                localStorage.setItem("theme", "dark");
-                setIsDarkmode(true);
-            }
-        }
     return (
         <nav
         className={cn(
             "fixed w-full z-40 transition-all duration-300",
-            isScrolled ? "md:py-3 md:bg-background/80 md:backdrop-blur-md md:shadow-xs py-5" : "py-5"
+            isScrolled ? "md:py-3 bg-background/80 backdrop-blur-md md:shadow-xs py-5" : "py-5"
 
         )}
         >
@@ -65,7 +36,9 @@ export const NavBar = () => {
                 <a className="text-xl font-bold text-primary flex items-center"
                 href="#hero"
                 >
-                    <span className = "relative z-10">
+                    <span className = {cn(
+                        "relative z-10"
+        )}>
                         <span className="text-glow text-foreground"> Sanjay Ghosh </span> Portfolio
                     </span>
                 </a>
@@ -81,17 +54,7 @@ export const NavBar = () => {
                             {item.name}
                         </a>
                     ))}
-                    <button
-                        onClick={toggleTheme}
-                        className="p-2 rounded-full transition-colors duration-300 focus:outline-hidden"
-                        aria-label="Toggle theme"
-                    >
-                        {isDarkmode ? (
-                            <Sun className="h-5 w-5 text-yellow-300" />
-                        ) : (
-                            <Moon className="h-5 w-5 text-black" fill="currentColor"/>
-                        )}
-                    </button>
+                    <ThemeToggle />
                 </div>
 
                 {/* mobile nav */}
@@ -122,17 +85,7 @@ export const NavBar = () => {
                                 {item.name}
                             </a>
                         ))}
-                        <button
-                            onClick={toggleTheme}
-                            className="p-2 rounded-full transition-colors duration-300 focus:outline-hidden self-center"
-                            aria-label="Toggle theme"
-                        >
-                            {isDarkmode ? (
-                                <Sun className="h-6 w-6 text-yellow-300" />
-                            ) : (
-                                <Moon className="h-6 w-6 text-black" fill="currentColor"/>
-                            )}
-                        </button>
+                        <ThemeToggle className="self-center" iconSize="h-6 w-6" />
                     </div>
                 </div>
 

@@ -1,11 +1,11 @@
 import { Sun, Moon } from "lucide-react";
 import { useState, useEffect } from "react";
-import {cn} from "@/lib/utils";
+import { cn } from "@/lib/utils";
 
-export const ThemeToggle = () => {
-    const [isDarkmode,setIsDarkmode] = useState(true);
-    
-/* Check for stored theme preference, default to dark */
+export const ThemeToggle = ({ className, iconSize = "h-5 w-5" }) => {
+    const [isDarkmode, setIsDarkmode] = useState(true);
+
+    /* Check for stored theme preference, default to dark */
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme");
         if (storedTheme === "light") {
@@ -21,29 +21,33 @@ export const ThemeToggle = () => {
         }
     }, []);
 
-/* Toggle between light and dark themes */
+    /* Toggle between light and dark themes */
     const toggleTheme = () => {
         if (isDarkmode) {
-                document.documentElement.classList.remove("dark");
-                localStorage.setItem("theme","light");
+            document.documentElement.classList.remove("dark");
+            localStorage.setItem("theme", "light");
             setIsDarkmode(false);
         } else {
-                document.documentElement.classList.add("dark");
-                localStorage.setItem("theme","dark");
+            document.documentElement.classList.add("dark");
+            localStorage.setItem("theme", "dark");
             setIsDarkmode(true);
         }
     }
 
     return (
-        <button onClick={toggleTheme} className={cn(
-            "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors",
-            "duration-300 focus:outline-hidden"
-
-        )}>
-            {isDarkmode ? (
-                <Sun className="h-6 w-6 text-yellow-300" />
-            ) : (
-                <Moon className="h-6 w-6 text-black" fill="currentColor"/>
+        <button
+            onClick={toggleTheme}
+            className={cn(
+                "p-2 rounded-full transition-colors duration-300 focus:outline-hidden",
+                className
             )}
-            </button>
-)}
+            aria-label="Toggle theme"
+        >
+            {isDarkmode ? (
+                <Sun className={cn(iconSize, "text-yellow-300")} />
+            ) : (
+                <Moon className={cn(iconSize, "text-black")} fill="currentColor"/>
+            )}
+        </button>
+    )
+}
