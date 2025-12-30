@@ -30,11 +30,50 @@ Op basis van de lessen die we uit vorige campagnes leerden schaalden we steeds v
         title: "B2B IT-copywriting voor Leadgate",
         description: `IT-professionals weten vaak heel veel, maar vinden het lastig communiceren met minder technische mensen. En geloof me, dat is wederzijds.
 
-Maar veel marketers snappen IT ook niet zo goed en raken daardoor kant nog wal. Leadgate was daarom erg blij dat ik ze kon helpen met hun B2B IT-klanten.
+        Maar veel marketers snappen IT ook niet zo goed en raken daardoor kant noch wal. Leadgate was daarom erg blij dat ik ze kon helpen met hun B2B IT-klanten.
 
-Het resultaat? Teksten die complexe materie simpel en toegankelijk maken voor iedereen.`,
+        Het resultaat? Teksten die complexe materie simpel en toegankelijk maken voor iedereen.`,
         image: "/projects/project3.png",
         tags: ["B2B copywriting", "IT-content", "Technische communicatie", "Conversieoptimalisatie"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        id: 6,
+        title: "Content strategie & SEO-optimalisatie",
+        description: `Content maken zonder plan is als naar de supermarkt gaan zonder boodschappenlijstje. Je vergeet de helft en koopt dingen die je niet nodig hebt. Uiteindelijk hebben je bezoekers alsnog honger.
+
+        Daarom maakte ik voor dit bedrijf een contentkalender en optimaliseerde ik hun content strategie volledig voor SEO.
+
+        Het resultaat? Een verdubbeling van het aantal leads binnen een jaar. Dat is nog eens strategisch shoppen.`,
+        image: "/projects/project6.svg",
+        tags: ["Content strategie", "SEO-optimalisatie", "Contentkalender", "Lead generation"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        id: 7,
+        title: "PR voor Promovendi van Hora Est",
+        description: `Leuk natuurlijk zo 'n proefschrift, maar zonde als niemand het leest. Daarom werkte ik samen met Hora Est om de verhalen van promovendi onder de aandacht van nieuwspublicaties te brengen.
+
+        Uiteindelijk zijn de artikelen die ik heb geschreven opgepakt door o.a De Volkskrant, Trouw en NRC.
+
+        Beter dan dat het in een stoffige la eindigt, vonden de promovendi ook.`,
+        image: "/projects/project7.webp",
+        tags: ["PR-schrijven", "Storytelling", "Wetenschapscommunicatie"],
+        demoUrl: "#",
+        githubUrl: "#",
+    },
+    {
+        id: 8,
+        title: "Website copywriting voor psychologieplatform",
+        description: `Iedereen heeft wel eens wat steun nodig. Zelfs een psychologieplatform dat mensen helpt steun te vinden.
+
+Saskia wilde mensen aan de juiste therapie helpen, maar wist niet hoe ze het simpel kon uitleggen. Ik heb voor haar een volledige website geschreven, zodat haar bezoekers wisten wat ze aan haar hadden.
+
+Ondertussen stromen de matches binnen en worden er volop matches gemaakt. Scheelt Saskia zelf ook kopzorgen.`,
+        image: "/projects/project8.svg",
+        tags: ["Website copywriting", "UX writing", "Psychologie", "Conversieoptimalisatie"],
         demoUrl: "#",
         githubUrl: "#",
     },
