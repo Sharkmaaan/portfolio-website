@@ -73,7 +73,7 @@ Saskia wilde mensen aan de juiste therapie helpen, maar wist niet hoe ze het sim
 
 Ondertussen stromen de matches binnen en worden er volop matches gemaakt. Scheelt Saskia zelf ook kopzorgen.`,
         image: "/projects/project8.svg",
-        tags: ["Website copywriting", "UX writing", "Psychologie", "Conversieoptimalisatie"],
+        tags: ["Website copywriting", "Website-content", "Conversieoptimalisatie"],
         demoUrl: "#",
         githubUrl: "#",
     },
@@ -97,7 +97,7 @@ export const ProjectsSection = () => {
                 <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
                 >
                     <div className="h-80 overflow-hidden">
-                        <img src={project.image} alt={project.title} className="bg-white w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+                        <img src={project.image} alt={project.title} className="bg-white w-full h-full object-contain transition-transform duration-500 scale-110 group-hover:scale-120"/>
                     </div>
 
                     <div className="p-6">
