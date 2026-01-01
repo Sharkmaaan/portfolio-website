@@ -2,18 +2,21 @@ import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
-
-const navItems = [
-    {name: "Home", href: "#hero"},
-    {name: "Over mij", href: "#overmij"},
-    {name: "Vaardigheden", href: "#vaardigheden"},
-    {name: "Projecten", href: "#projecten"},
-    {name: "Contact", href: "#contact"},
-]
+import { LanguageSwitcher } from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export const NavBar = () => {
+        const { t } = useTranslation();
         const[isScrolled, setIsScrolled] = useState(false)
         const[isMenuOpen, setIsMenuOpen] = useState(false)
+
+        const navItems = [
+            {name: t('nav.home'), href: "#hero"},
+            {name: t('nav.about'), href: "#overmij"},
+            {name: t('nav.skills'), href: "#vaardigheden"},
+            {name: t('nav.projects'), href: "#projecten"},
+            {name: t('nav.contact'), href: "#contact"},
+        ]
 
     useEffect(() => {
         const handleScroll = () => {
@@ -37,12 +40,12 @@ export const NavBar = () => {
                 href="#hero"
                 >
                     <span className = "relative z-10">
-                        <span className="text-glow text-foreground"> Sanjay Ghosh </span> Portfolio
+                        <span className="text-glow text-foreground"> Sanjay Ghosh </span> {t('nav.portfolio')}
                     </span>
                 </a>
 
                 {/* desktop nav */}
-                <div className = "hidden md:flex items-center space-x-8">
+                <div className = "hidden md:flex items-center gap-6">
                     {navItems.map((item, key) => (
                         <a
                             key={key}
@@ -52,7 +55,10 @@ export const NavBar = () => {
                             {item.name}
                         </a>
                     ))}
-                    <ThemeToggle className="-m-2" />
+                    <div className="flex items-center gap-6">
+                        <LanguageSwitcher className="-m-2" />
+                        <ThemeToggle className="-m-2" />
+                    </div>
                 </div>
 
                 {/* mobile nav */}
@@ -83,7 +89,10 @@ export const NavBar = () => {
                                 {item.name}
                             </a>
                         ))}
-                        <ThemeToggle className="self-center" iconSize="h-6 w-6" />
+                        <div className="flex items-center gap-4 self-center">
+                            <LanguageSwitcher className="self-center" iconSize="h-6 w-6" />
+                            <ThemeToggle className="self-center" iconSize="h-6 w-6" />
+                        </div>
                     </div>
 
                 </div>

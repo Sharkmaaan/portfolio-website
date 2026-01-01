@@ -1,45 +1,39 @@
-import { Lightbulb, Pen, ChartSpline } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 export const AboutSection = () => {
+    const { t } = useTranslation();
+
     return <section id="overmij" className="py-24 px-4 relative">
         <div className="container mx-auto max-w-5xl">
             <h2 className ="text-3xl md:text-4xl font-bold mb-12 text-center" >
-                Maar wie <span className="text-primary"> is </span> Sanjay, eigenlijk?
+                {t('about.title')} <span className="text-primary">{t('about.is')}</span> {t('about.title_end')}
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                 <div className="space-y-6">
-                    <h3 className="text-xl font-semibold">Online marketeer, copywriter en kattenliefhebber.</h3>
+                    <h3 className="text-xl font-semibold">{t('about.subtitle')}</h3>
                     <p className="text-justify text-muted-foreground">
-                    Ik ben een online marketeer. Waarom is dat belangrijk voor jou? Nou, zie het zo. 
-                    Mensen lezen graag verhalen, maar ze blokkeren reclames. 
-                    Dus als je wilt dat mensen het belangrijk vinden wat je doet, moet je ze je verhaal vertellen. 
-                    En dat kan ik als geen ander.
+                    {t('about.paragraph1')}
                     </p>
 
                     <p className="text-justify text-muted-foreground">
-                    Goede marketing is eenvoudig en gericht. 
-                    Het weet een intens gevoel over te brengen in een hapklaar formaat. 
-                    En het is vooral belangrijk dat het goed in de smaak valt bij de doelgroep. 
-                    Eigenlijk is goede marketing net een stroopwafel, en daarvan weten we al dat mensen er dol op zijn.
+                    {t('about.paragraph2')}
                     </p>
 
                     <p className="text-justify text-muted-foreground">
-                    Maar de beste campagne ter wereld is nog niks waard als je niet weet hoe deze presteert. 
-                    Daarom analyseer ik elke campagne tot in detail. 
-                    Zo zorg ik dat elke euro die we uitgeven ook echt resultaat oplevert.
+                    {t('about.paragraph3')}
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="cosmic-button">
-                            Neem contact op
+                            {t('about.cta_contact')}
                         </a>
                         {/* TODO: CV updaten en toevoegen */}
                         <a href="/downloads/Marketingspecialist-Sanjay-Ghosh.pdf" download className={cn("px-6 py-2 rounded-full border border-primary text-primary",
                                                  "hover:bg-primary/10 transition-colors duration-300"
                                                  )}>
-                            Download mijn CV
+                            {t('about.cta_cv')}
                         </a>
                     </div>
                 </div>
@@ -48,7 +42,7 @@ export const AboutSection = () => {
                         <img
                             src="/Happycopywriter.jpg"
                             style={{ transform: 'scaleX(-1)' }}
-                            alt="Een foto van Sanjay die lacht en achter een laptop zit"
+                            alt={t('about.image_alt')}
                             className="w-full h-full object-cover rounded-lg"
                         />
                     </div>

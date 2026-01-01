@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Sanjay Ghosh",
+    "tagline": "Online marketing specialist. I plan, create and analyze content. So that your organization",
+    "shine": "shines",
+    "where_others": "where others",
+    "twinkle": "twinkle.",
+    "cta": "View my projects",
+    "scroll": "Scroll Down"
+  },
+  "about": {
+    "title": "But who",
+    "is": "is",
+    "title_end": "Sanjay, really?",
+    "subtitle": "Online marketer, copywriter and cat lover.",
+    "paragraph1": "I'm an online marketer. Why should you care? Well, think of it this way. People love reading stories, but they block ads. So if you want people to care about what you do, you need to tell them your story. And that's exactly what I do.",
+    "paragraph2": "Good marketing is simple and focused. It conveys an intense feeling in a digestible format. And most importantly, it leaves your audience wanting more. Actually, good marketing is a lot like pizza, and we already know people love that.",
+    "paragraph3": "But even the best campaign in the world is worthless if you don't know how it performs. That's why I analyze every campaign in detail. This way, I ensure that every euro we spend actually delivers results.",
+    "cta_contact": "Get in touch",
+    "cta_cv": "Download my CV",
+    "image_alt": "A photo of Sanjay smiling and sitting behind a laptop"
+  },
+  "skills": {
+    "title": "So what",
+    "can": "can",
+    "title_end": "he do then?",
+    "subtitle": "Well, quite a lot actually.",
+    "categories": {
+      "all": "All",
+      "planning": "Planning",
+      "execution": "Execution",
+      "analysis": "Analysis",
+      "tools": "Tools"
+    },
+    "list": {
+      "marketingStrategy": "Marketing strategy",
+      "campaignPlanning": "Campaign & content planning",
+      "icpDevelopment": "ICP development",
+      "customerJourney": "Customer journey mapping",
+      "leadGenStrategies": "Lead-gen strategies",
+      "competitiveAnalysis": "Competitive analysis",
+      "contentCalendar": "Content calendar management",
+      "copywriting": "Copywriting",
+      "contentCreation": "Content creation",
+      "webDesign": "Web design",
+      "htmlCss": "HTML/CSS",
+      "videoEditing": "Video editing",
+      "cmsManagement": "CMS management",
+      "marketingAutomation": "Marketing automation",
+      "seoOptimization": "SEO optimization",
+      "seoSeaAnalysis": "SEO/SEA analysis",
+      "abTesting": "A/B testing",
+      "crmAnalytics": "CRM analytics",
+      "dataVisualization": "Data visualization",
+      "conversionOptimization": "Conversion optimization",
+      "googleAnalytics": "Google Analytics 4 (GA4)",
+      "googleSearchConsole": "Google Search Console (GSC)",
+      "googleDataStudio": "Google Data Studio/Looker",
+      "googleTagManager": "Google Tag Manager (GTM)",
+      "googleAds": "Google Ads",
+      "semrush": "Semrush",
+      "hubspot": "Hubspot",
+      "wordpress": "Wordpress",
+      "shopify": "Shopify",
+      "mailchimp": "Mailchimp",
+      "clickup": "ClickUp",
+      "linkedinCampaign": "LinkedIn Campaign Manager",
+      "facebookBusiness": "Facebook Business Manager"
+    }
+  },
+  "projects": {
+    "title": "Wow, for",
+    "who": "whom",
+    "title_end": "has he done all that?",
+    "subtitle": "I've worked with more than 40 companies, so that's a bit much to list here. For now, just the highlights. Feel free to ask if you want to know if I have experience with something specific.",
+    "items": {
+      "yokoy": {
+        "title": "Marketing campaigns for Yokoy",
+        "description": "This B2B fintech's LinkedIn campaigns looked way too similar to the competition. \"Save tons of money.\" And you could see in GA4 that this was costing them clicks.\n\nSo I decided to attract attention with a different message. Save a little. But time and time again. The \"It all adds up\" campaign.\n\nDelivered 120% of the expected leads on LinkedIn and a free sushi buffet for our team. Always seems like little food but that adds up too.",
+        "tags": ["Campaign planning", "Copywriting", "Conversion analysis", "Landing page design", "Newsletters", "Email Marketing"]
+      },
+      "primalSoles": {
+        "title": "SEO blogs for Primal Soles",
+        "description": "This e-commerce webshop has insoles that feel like walking on clouds, but website visits weren't doing so great.\n\nI created an SEO-optimized content campaign for them and made content that attracted people to them. This resulted in multiple #1 positions in Google for the right search terms and a 30% increase in website traffic.\n\nBased on the lessons we learned from previous campaigns, we scaled further and further. A pretty good step up, if I say so myself.",
+        "tags": ["SEO optimization", "Copywriting", "Keyword analysis"]
+      },
+      "leadgate": {
+        "title": "B2B IT copywriting for Leadgate",
+        "description": "IT professionals often know a lot, but find it difficult to communicate with less technical people. And believe me, the feeling is mutual.\n\n        But many marketers don't understand IT very well either, so they struggle with getting the message across. That's why Leadgate was overjoyed that I could help them with their B2B IT clients.\n\n        The result? Texts that make complex topics simple and accessible for everyone.",
+        "tags": ["B2B copywriting", "IT content", "Technical communication", "Conversion optimization"]
+      },
+      "contentStrategy": {
+        "title": "Content strategy & SEO optimization",
+        "description": "Creating content without a plan is like going to the supermarket without a shopping list. You forget half the stuff you do need and buy loads of things you don't need. In the end, your visitors are still hungry.\n\n        That's why I created a content calendar for this company and fully optimized their content strategy for SEO.\n\n        This led to a doubling of the number of leads within a year. Dinner is served",
+        "tags": ["Content strategy", "SEO optimization", "Content calendar", "Lead generation"]
+      },
+      "horaEst": {
+        "title": "PR for PhD candidates from Hora Est",
+        "description": "A thesis is nice of course, but it's a pity if no one reads it. That's why I worked together with Hora Est to bring the stories of PhD candidates to the attention of news publications.\n\n        Eventually, the articles I wrote were picked up by De Volkskrant, Trouw and NRC, among others.\n\n        Better than ending up in a dusty drawer. The PhD candidates agreed.",
+        "tags": ["PR writing", "Storytelling", "Science communication"]
+      },
+      "psychologyPlatform": {
+        "title": "Website copywriting for psychology platform",
+        "description": "Everyone needs some support sometimes. Even a psychology platform that helps people find support.\n\nSaskia wanted to help people find the right therapy, but didn't know how to explain it simply. I wrote a complete website for her, so her visitors knew what they could expect from her.\n\nMeanwhile, the matches are flowing in and plenty of matches are being made. Saves Saskia some headaches too.",
+        "tags": ["Website copywriting", "Website content", "Conversion optimization"]
+      }
+    }
+  },
+  "contact": {
+    "title": "So what do you",
+    "say": "say?",
+    "title_end": "",
+    "subtitle": "If you're reading this, I've held your attention for quite some time. Shall we see if I can do that for your target audience too?",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "linkedin": "LinkedIn",
+    "locationValue": "Amsterdam, Netherlands"
+  },
+  "footer": {
+    "copyright": "Website made by Sanjay Ghosh. All rights reserved."
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Over mij",
+    "skills": "Vaardigheden",
+    "projects": "Projecten",
+    "contact": "Contact",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "greeting": "Hoi, ik ben",
+    "name": "Sanjay Ghosh",
+    "tagline": "Online marketingspecialist. Ik plan, maak en analyseer content. Zodat jouw organisatie",
+    "shine": "straalt",
+    "where_others": "waar anderen",
+    "twinkle": "twinkelen.",
+    "cta": "Bekijk mijn projecten",
+    "scroll": "Scroll Verder"
+  },
+  "about": {
+    "title": "Maar wie",
+    "is": "is",
+    "title_end": "Sanjay, eigenlijk?",
+    "subtitle": "Online marketeer, copywriter en kattenliefhebber.",
+    "paragraph1": "Ik ben een online marketeer. Waarom is dat belangrijk voor jou? Nou, zie het zo. Mensen lezen graag verhalen, maar ze blokkeren reclames. Dus als je wilt dat mensen het belangrijk vinden wat je doet, moet je ze je verhaal vertellen. En dat kan ik als geen ander.",
+    "paragraph2": "Goede marketing is eenvoudig en gericht. Het weet een intens gevoel over te brengen in een hapklaar formaat. En het is vooral belangrijk dat het goed in de smaak valt bij de doelgroep. Eigenlijk is goede marketing net een stroopwafel, en daarvan weten we al dat mensen er dol op zijn.",
+    "paragraph3": "Maar de beste campagne ter wereld is nog niks waard als je niet weet hoe deze presteert. Daarom analyseer ik elke campagne tot in detail. Zo zorg ik dat elke euro die we uitgeven ook echt resultaat oplevert.",
+    "cta_contact": "Neem contact op",
+    "cta_cv": "Download mijn CV",
+    "image_alt": "Een foto van Sanjay die lacht en achter een laptop zit"
+  },
+  "skills": {
+    "title": "Dus wat",
+    "can": "kan",
+    "title_end": "ie dan?",
+    "subtitle": "Nou, best wel veel eigenlijk.",
+    "categories": {
+      "all": "Alle",
+      "planning": "Planning",
+      "execution": "Uitvoering",
+      "analysis": "Analyse",
+      "tools": "Tools"
+    },
+    "list": {
+      "marketingStrategy": "Marketingstrategie",
+      "campaignPlanning": "Campagne & contentplanning",
+      "icpDevelopment": "ICP-ontwikkeling",
+      "customerJourney": "Customer journey mapping",
+      "leadGenStrategies": "Lead-gen strategieën",
+      "competitiveAnalysis": "Concurrentieanalyse",
+      "contentCalendar": "Contentkalenderbeheer",
+      "copywriting": "Copywriting",
+      "contentCreation": "Contentcreatie",
+      "webDesign": "Webdesign",
+      "htmlCss": "HTML/CSS",
+      "videoEditing": "Video editing",
+      "cmsManagement": "CMS-beheer",
+      "marketingAutomation": "Marketing-automatisering",
+      "seoOptimization": "SEO-optimalisatie",
+      "seoSeaAnalysis": "SEO/SEA-analyse",
+      "abTesting": "A/B testing",
+      "crmAnalytics": "CRM analytics",
+      "dataVisualization": "Data visualisatie",
+      "conversionOptimization": "Conversie-optimalisatie",
+      "googleAnalytics": "Google Analytics 4 (GA4)",
+      "googleSearchConsole": "Google Search Console (GSC)",
+      "googleDataStudio": "Google Data Studio/Looker",
+      "googleTagManager": "Google Tag Manager (GTM)",
+      "googleAds": "Google Ads",
+      "semrush": "Semrush",
+      "hubspot": "Hubspot",
+      "wordpress": "Wordpress",
+      "shopify": "Shopify",
+      "mailchimp": "Mailchimp",
+      "clickup": "ClickUp",
+      "linkedinCampaign": "LinkedIn Campaign Manager",
+      "facebookBusiness": "Facebook Business Manager"
+    }
+  },
+  "projects": {
+    "title": "Wow, bij",
+    "who": "wie",
+    "title_end": "heeft ie dat allemaal gedaan dan?",
+    "subtitle": "Ik heb met meer dan 40 bedrijven samengewerkt, dus dat is wat veel om hier allemaal neer te knallen. Voor nu dus even de highlights. Vraag het gerust als je wilt weten of ik met iets specifieks ervaring heb.",
+    "items": {
+      "yokoy": {
+        "title": "Marketingcampagnes voor Yokoy",
+        "description": "De LinkedIn campagnes van deze B2B fintech leken wel érg veel op de concurrentie. \"Bespaar tonnen aan geld\". En je zag in GA4 dat er daardoor weinig mensen klikten.\n\nDus besloot ik de aandacht te trekken met een andere boodschap. Bespaar een beetje. Maar keer op keer. De \"Alles telt op\"-campagne.\n\nZorgde voor 120% van de verwachte leads op LinkedIn en een gratis sushibuffet voor ons team. Lijkt altijd weinig eten maar dat telt ook op.",
+        "tags": ["Campagneplanning", "Copywriting", "Conversieanalyse", "Landingspagina design", "Nieuwsbrieven", "Email Marketing"]
+      },
+      "primalSoles": {
+        "title": "SEO-blogs voor Primal Soles",
+        "description": "Deze e-commerce webshop heeft inlegzolen die lekker lopen, maar met de websitebezoeken liep het minder.\n\nIk maakte een SEO-geoptimaliseerde content campagne voor ze en maakte content die mensen naar hun toetrok. Dit zorgde voor meerdere nr 1 plekken in Google voor juiste zoektermen en een toename van 30% in websiteverkeer.\n\nOp basis van de lessen die we uit vorige campagnes leerden schaalden we steeds verder. Dat is nog eens lekker afgelopen.",
+        "tags": ["SEO-optimalisatie", "Copywriting", "Zoekwoordenanalyse"]
+      },
+      "leadgate": {
+        "title": "B2B IT-copywriting voor Leadgate",
+        "description": "IT-professionals weten vaak heel veel, maar vinden het lastig communiceren met minder technische mensen. En geloof me, dat is wederzijds.\n\n        Maar veel marketers snappen IT ook niet zo goed en raken daardoor kant noch wal. Leadgate was daarom erg blij dat ik ze kon helpen met hun B2B IT-klanten.\n\n        Het resultaat? Teksten die complexe materie simpel en toegankelijk maken voor iedereen.",
+        "tags": ["B2B copywriting", "IT-content", "Technische communicatie", "Conversieoptimalisatie"]
+      },
+      "contentStrategy": {
+        "title": "Content strategie & SEO-optimalisatie",
+        "description": "Content maken zonder plan is als naar de supermarkt gaan zonder boodschappenlijstje. Je vergeet de helft en koopt dingen die je niet nodig hebt. Uiteindelijk hebben je bezoekers alsnog honger.\n\n        Daarom maakte ik voor dit bedrijf een contentkalender en optimaliseerde ik hun content strategie volledig voor SEO.\n\n        Dit leidde tot een verdubbeling van het aantal leads binnen een jaar. Dat is pas lekker.",
+        "tags": ["Content strategie", "SEO-optimalisatie", "Contentkalender", "Lead generation"]
+      },
+      "horaEst": {
+        "title": "PR voor Promovendi van Hora Est",
+        "description": "Leuk natuurlijk zo 'n proefschrift, maar zonde als niemand het leest. Daarom werkte ik samen met Hora Est om de verhalen van promovendi onder de aandacht van nieuwspublicaties te brengen.\n\n        Uiteindelijk zijn de artikelen die ik heb geschreven opgepakt door o.a De Volkskrant, Trouw en NRC.\n\n        Beter dan dat het in een stoffige la eindigt, vonden de promovendi ook.",
+        "tags": ["PR-schrijven", "Storytelling", "Wetenschapscommunicatie"]
+      },
+      "psychologyPlatform": {
+        "title": "Website copywriting voor psychologieplatform",
+        "description": "Iedereen heeft wel eens wat steun nodig. Zelfs een psychologieplatform dat mensen helpt steun te vinden.\n\nSaskia wilde mensen aan de juiste therapie helpen, maar wist niet hoe ze het simpel kon uitleggen. Ik heb voor haar een volledige website geschreven, zodat haar bezoekers wisten wat ze aan haar hadden.\n\nOndertussen stromen de matches binnen en worden er volop matches gemaakt. Scheelt Saskia zelf ook kopzorgen.",
+        "tags": ["Website copywriting", "Website-content", "Conversieoptimalisatie"]
+      }
+    }
+  },
+  "contact": {
+    "title": "Dus wat",
+    "say": "zeg",
+    "title_end": "je ervan?",
+    "subtitle": "Als je dit leest heb ik je aandacht toch een flinke tijd vastgehouden. Zullen we kijken of ik dat ook voor je doelgroep kan doen?",
+    "email": "Email",
+    "phone": "Telefoon",
+    "location": "Locatie",
+    "linkedin": "Linkedin",
+    "locationValue": "Amsterdam, Nederland"
+  },
+  "footer": {
+    "copyright": "Website gemaakt door Sanjay Ghosh. All rights reserved."
+  }
+}

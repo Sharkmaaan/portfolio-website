@@ -1,78 +1,86 @@
 import { useState, useEffect } from "react";
-import { cn } from '@/lib/utils'
+import { cn } from '@/lib/utils';
+import { useTranslation } from "react-i18next";
 
-const skills = [
-    // Planning
-    {name: "Marketingstrategie", level: 90, category: "Planning"},
-    {name: "Campagne & contentplanning", level: 85, category: "Planning"},
-    {name: "ICP-ontwikkeling", level: 80, category: "Planning"},
-    {name: "Customer journey mapping", level: 80, category: "Planning"},
-    {name: "Lead-gen strategieën", level: 90, category: "Planning"},
-    {name: "Concurrentieanalyse", level: 80, category: "Planning"},
-    {name: "Contentkalenderbeheer", level: 90, category: "Planning"},
-
-    // Uitvoering
-    {name: "Copywriting", level: 95, category: "Uitvoering"},
-    {name: "Contentcreatie", level: 90, category: "Uitvoering"},
-    {name: "Webdesign", level: 85, category: "Uitvoering"},
-    {name: "HTML/CSS", level: 80, category: "Uitvoering"},
-    {name: "Video editing", level: 70, category: "Uitvoering"},
-    {name: "CMS-beheer", level: 85, category: "Uitvoering"},
-    {name: "Marketing-automatisering", level: 80, category: "Uitvoering"},
-    {name: "SEO-optimalisatie", level: 90, category: "Uitvoering"},
-
-    // Analyse
-    {name: "SEO/SEA-analyse", level: 85, category: "Analyse"},
-    {name: "A/B testing", level: 80, category: "Analyse"},
-    {name: "CRM analytics", level: 80, category: "Analyse"},
-    {name: "Data visualisatie", level: 75, category: "Analyse"},
-    {name: "Conversie-optimalisatie", level: 85, category: "Analyse"},
-
-    //Tools
-    {name: "Google Analytics 4 (GA4)", level: 85, category: "Tools"},
-    {name: "Google Search Console (GSC)", level: 85, category: "Tools"},
-    {name: "Google Data Studio/Looker", level: 65, category: "Tools"},
-    {name: "Google Tag Manager (GTM)", level: 75, category: "Tools"},
-    {name: "Google Ads", level: 75, category: "Tools"},
-    {name: "Semrush", level: 75, category: "Tools"},
-    {name: "Hubspot", level: 75, category: "Tools"},
-    {name: "Wordpress", level: 75, category: "Tools"},
-    {name: "Shopify", level: 75, category: "Tools"},
-    {name: "Mailchimp", level: 75, category: "Tools"},
-    {name: "ClickUp", level: 75, category: "Tools"},
-    {name: "LinkedIn Campaign Manager", level: 80, category: "Tools"},
-    {name: "Facebook Business Manager", level: 75, category: "Tools"},
-
-]
-
-const categories = ["Alle", "Planning", "Uitvoering", "Analyse", "Tools"]
 export const SkillsSection = () => {
-        const [activeCategory, setActiveCategory] = useState("Alle")
+        const { t } = useTranslation();
+        const [activeCategory, setActiveCategory] = useState("all");
 
-        const filteredSkills = skills.filter((skill) => activeCategory ==="Alle" || skill.category === activeCategory
+        const skills = [
+            // Planning
+            {name: t('skills.list.marketingStrategy'), level: 90, category: "planning"},
+            {name: t('skills.list.campaignPlanning'), level: 85, category: "planning"},
+            {name: t('skills.list.icpDevelopment'), level: 80, category: "planning"},
+            {name: t('skills.list.customerJourney'), level: 80, category: "planning"},
+            {name: t('skills.list.leadGenStrategies'), level: 90, category: "planning"},
+            {name: t('skills.list.competitiveAnalysis'), level: 80, category: "planning"},
+            {name: t('skills.list.contentCalendar'), level: 90, category: "planning"},
+
+            // Execution
+            {name: t('skills.list.copywriting'), level: 95, category: "execution"},
+            {name: t('skills.list.contentCreation'), level: 90, category: "execution"},
+            {name: t('skills.list.webDesign'), level: 85, category: "execution"},
+            {name: t('skills.list.htmlCss'), level: 80, category: "execution"},
+            {name: t('skills.list.videoEditing'), level: 70, category: "execution"},
+            {name: t('skills.list.cmsManagement'), level: 85, category: "execution"},
+            {name: t('skills.list.marketingAutomation'), level: 80, category: "execution"},
+            {name: t('skills.list.seoOptimization'), level: 90, category: "execution"},
+
+            // Analysis
+            {name: t('skills.list.seoSeaAnalysis'), level: 85, category: "analysis"},
+            {name: t('skills.list.abTesting'), level: 80, category: "analysis"},
+            {name: t('skills.list.crmAnalytics'), level: 80, category: "analysis"},
+            {name: t('skills.list.dataVisualization'), level: 75, category: "analysis"},
+            {name: t('skills.list.conversionOptimization'), level: 85, category: "analysis"},
+
+            //Tools
+            {name: t('skills.list.googleAnalytics'), level: 85, category: "tools"},
+            {name: t('skills.list.googleSearchConsole'), level: 85, category: "tools"},
+            {name: t('skills.list.googleDataStudio'), level: 65, category: "tools"},
+            {name: t('skills.list.googleTagManager'), level: 75, category: "tools"},
+            {name: t('skills.list.googleAds'), level: 75, category: "tools"},
+            {name: t('skills.list.semrush'), level: 75, category: "tools"},
+            {name: t('skills.list.hubspot'), level: 75, category: "tools"},
+            {name: t('skills.list.wordpress'), level: 75, category: "tools"},
+            {name: t('skills.list.shopify'), level: 75, category: "tools"},
+            {name: t('skills.list.mailchimp'), level: 75, category: "tools"},
+            {name: t('skills.list.clickup'), level: 75, category: "tools"},
+            {name: t('skills.list.linkedinCampaign'), level: 80, category: "tools"},
+            {name: t('skills.list.facebookBusiness'), level: 75, category: "tools"},
+        ];
+
+        const categories = [
+            { key: "all", label: t('skills.categories.all') },
+            { key: "planning", label: t('skills.categories.planning') },
+            { key: "execution", label: t('skills.categories.execution') },
+            { key: "analysis", label: t('skills.categories.analysis') },
+            { key: "tools", label: t('skills.categories.tools') }
+        ]
+
+        const filteredSkills = skills.filter((skill) => activeCategory === "all" || skill.category === activeCategory
     );
     return (
         <section id="vaardigheden" className="py-24 px-4 relative bg-secondary/3">
             <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl mb-4 font-bold text-center">
-                Dus wat <span className="text-primary">kan</span> ie dan?
+                {t('skills.title')} <span className="text-primary">{t('skills.can')}</span> {t('skills.title_end')}
             </h2>
             <p className="text-lg md:text-xl max-w-2xl text-muted-foreground mb-10 mx-auto opacity-0 animate-fade-in-delay-3"
-            >Nou, best wel veel eigenlijk.</p>
+            >{t('skills.subtitle')}</p>
 
             <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {categories.map((category, key) => (
-                <button 
-                    key={key} 
-                    onClick={() => setActiveCategory(category)}
+                <button
+                    key={key}
+                    onClick={() => setActiveCategory(category.key)}
                     className={cn(
                     "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
-                    activeCategory === category ?
+                    activeCategory === category.key ?
                     "bg-primary text-primary-foreground" :
                     "bg-secondary/70 text-foreground hover:bg-secondary"
                 )}
                 >
-                    {category}
+                    {category.label}
                 </button>
                 ))}
 
