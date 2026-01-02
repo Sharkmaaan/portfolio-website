@@ -30,9 +30,9 @@
     "image_alt": "A photo of Sanjay smiling and sitting behind a laptop"
   },
   "skills": {
-    "title": "So what",
-    "can": "can",
-    "title_end": "he do then?",
+    "title": "So what does he",
+    "can": "do?",
+    "title_end": "",
     "subtitle": "Well, quite a lot actually.",
     "categories": {
       "all": "All",
@@ -78,9 +78,9 @@
     }
   },
   "projects": {
-    "title": "Wow, for",
-    "who": "whom",
-    "title_end": "has he done all that?",
+    "title": "Wow,",
+    "who": "where did he",
+    "title_end": "learn all that?",
     "subtitle": "I've worked with more than 40 companies, so that's a bit much to list here. For now, just the highlights. Feel free to ask if you want to know if I have experience with something specific.",
     "items": {
       "yokoy": {
