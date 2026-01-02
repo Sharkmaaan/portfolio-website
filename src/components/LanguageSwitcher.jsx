@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import { cn } from '@/lib/utils';
 import { useEffect } from 'react';
+import GB from 'country-flag-icons/react/3x2/GB';
+import NL from 'country-flag-icons/react/3x2/NL';
 
 export const LanguageSwitcher = ({ className, iconSize = "h-5 w-5" }) => {
   const { i18n } = useTranslation();
@@ -16,7 +18,7 @@ export const LanguageSwitcher = ({ className, iconSize = "h-5 w-5" }) => {
   };
 
   // Show the flag of the language you're switching TO
-  const flagToShow = i18n.language === 'nl' ? '🇬🇧' : '🇳🇱';
+  const FlagComponent = i18n.language === 'nl' ? GB : NL;
 
   return (
     <button
@@ -29,7 +31,7 @@ export const LanguageSwitcher = ({ className, iconSize = "h-5 w-5" }) => {
       aria-label={`Switch to ${i18n.language === 'nl' ? 'English' : 'Dutch'}`}
       title={`Switch to ${i18n.language === 'nl' ? 'English' : 'Dutch'}`}
     >
-      <span className="text-2xl leading-none">{flagToShow}</span>
+      <FlagComponent className={iconSize} />
     </button>
   );
 };
