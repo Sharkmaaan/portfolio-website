@@ -24,8 +24,9 @@ export const LanguageSwitcher = ({ className, iconSize = "h-5 w-5" }) => {
     <button
       onClick={toggleLanguage}
       className={cn(
-        "p-2 rounded-full hover:bg-secondary/80 transition-colors duration-300",
+        "p-2 rounded-full hover:bg-secondary/80 transition-colors duration-300 cursor-pointer",
         "flex items-center justify-center text-foreground/80 hover:text-primary",
+        "border-b-2 border-transparent hover:border-white",
         className
       )}
       aria-label={`Switch to ${i18n.language === 'nl' ? 'English' : 'Dutch'}`}

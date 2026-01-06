@@ -38,7 +38,8 @@ export const ThemeToggle = ({ className, iconSize = "h-5 w-5" }) => {
         <button
             onClick={toggleTheme}
             className={cn(
-                "p-2 rounded-full transition-colors duration-300 focus:outline-hidden",
+                "p-2 rounded-full transition-colors duration-300 focus:outline-hidden cursor-pointer",
+                "border-b-2 border-transparent hover:border-white",
                 className
             )}
             aria-label="Toggle theme"
