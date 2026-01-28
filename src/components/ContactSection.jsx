@@ -8,7 +8,8 @@ export const ContactSection = () => {
         <section
             id="contact"
             className="py-24 px-4 relative bg-secondary/30"
-        >   <div className="container mx-auto max-w-5xl">
+        >
+            <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
                     {t('contact.title')} <span className="text-primary">{t('contact.say')}</span> {t('contact.title_end')}
                 </h2>
@@ -31,7 +32,7 @@ export const ContactSection = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="flex flex-col items-center text-center space-y-3">
+                            {/*<div className="flex flex-col items-center text-center space-y-3">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <Phone className="h-6 w-6 text-primary"/>
                                 </div>
@@ -41,7 +42,7 @@ export const ContactSection = () => {
                                         +31 (06) 23923943
                                     </a>
                                 </div>
-                            </div>
+                            </div>*/}
                             <div className="flex flex-col items-center text-center space-y-3">
                                 <div className="p-3 rounded-full bg-primary/10">
                                     <MapPin className="h-6 w-6 text-primary"/>
