@@ -4,6 +4,7 @@
     "about": "About me",
     "skills": "Skills",
     "projects": "Projects",
+    "certifications": "Certifications",
     "contact": "Contact",
     "portfolio": "Portfolio"
   },
@@ -76,6 +77,12 @@
       "linkedinCampaign": "LinkedIn Campaign Manager",
       "facebookBusiness": "Facebook Business Manager"
     }
+  },
+  "certifications": {
+    "title": "Does he",
+    "has": "have",
+    "title_end": "any certifications?",
+    "subtitle": "Yes, but not as many as you might think. I believe more in experience than in badges. Still, I have a few that are worth mentioning."
   },
   "projects": {
     "title": "Wow,",

@@ -4,6 +4,7 @@
     "about": "Over mij",
     "skills": "Vaardigheden",
     "projects": "Projecten",
+    "certifications": "Certificaten",
     "contact": "Contact",
     "portfolio": "Portfolio"
   },
@@ -76,6 +77,12 @@
       "linkedinCampaign": "LinkedIn Campaign Manager",
       "facebookBusiness": "Facebook Business Manager"
     }
+  },
+  "certifications": {
+    "title": "Heeft",
+    "has": "ie",
+    "title_end": "nog certificaten dan?",
+    "subtitle": "Ja, maar niet zo veel als je zou denken. Ik geloof meer in ervaring dan in badges. Toch heb ik er een paar die de moeite waard zijn."
   },
   "projects": {
     "title": "Wow, bij",
