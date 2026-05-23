@@ -15,7 +15,7 @@ export const NavBar = () => {
             {name: t('nav.about'), href: "#overmij"},
             {name: t('nav.skills'), href: "#vaardigheden"},
             {name: t('nav.projects'), href: "#projecten"},
-            {name: t('nav.certifications'), href: "#certificaten"},
+            /*{name: t('nav.certifications'), href: "#certificaten"},*/
             {name: t('nav.contact'), href: "#contact"},
         ]
 
